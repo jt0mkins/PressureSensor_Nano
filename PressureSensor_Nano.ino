@@ -3,8 +3,8 @@
 // Streams CSV lines over serial: millis,raw_adc,voltage_V,pressure_bar
 
 const uint8_t  SENSOR_PIN      = A0;
-const float    VREF            = 4.78;    // Nano ADC reference (measure your 5V pin and put the real value here)
-const float    V_MIN           = 0.5;    // sensor output at 0 bar
+const float    VREF            = 4.71;    // Nano ADC reference (measure your 5V pin and put the real value here)
+const float    V_MIN           = 0.475;    // sensor output at 0 bar
 const float    V_MAX           = 4.5;    // sensor output at full scale
 const float    P_MAX_BAR       = 100.0;  // full-scale pressure
 const uint8_t  NUM_SAMPLES     = 16;     // readings averaged per output line
